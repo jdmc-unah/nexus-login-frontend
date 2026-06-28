@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String _baseUrl = 'http://localhost:3000/api';
+  static const String _baseUrl = 'https://nexus-login-backend.daniel-cuellar.workers.dev/api';
 
   static String? loggedInEmail;
   static String? loggedInName;
@@ -29,7 +29,7 @@ class ApiService {
     } catch (e) {
       return {
         'success': false,
-        'error': 'Error de conexión: Verifica que el servidor backend esté corriendo en http://localhost:3000.'
+        'error': 'Error de conexión: Verifica que el servidor backend esté corriendo en https://nexus-login-backend.daniel-cuellar.workers.dev.'
       };
     }
   }
