@@ -2,7 +2,9 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String _baseUrl = 'https://nexus-login-backend.daniel-cuellar.workers.dev/api';
+  // TODO: Reemplaza esta URL con la URL final de tu servicio en Render (ej. https://nexus-login-backend.onrender.com/api)
+  static const String _baseUrl = 'https://nexus-login-backend.onrender.com/api';
+  // static const String _baseUrl = 'https://nexus-login-backend.daniel-cuellar.workers.dev/api';
   // static const String _baseUrl = 'http://localhost:3000/api';
   
   static String? loggedInEmail;
